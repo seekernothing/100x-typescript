@@ -33,7 +33,7 @@ console.log(ans)*/
 
 /// Interfaces ----> mainly used to assign types to objects
 
-interface User{
+/*interface User{
     name:string,
     lastname:string,
     age:number,
@@ -57,7 +57,47 @@ function greetUser(user:User){
 
 const res = greetUser(user)
 
-console.log(res);
+console.log(res)*/
 
 
 
+// Todo.tsx
+
+interface TodoType {
+  title: string;
+  description: string;
+  done: boolean;
+}
+
+interface TodoInput {
+  todo: TodoType;
+}
+
+function Todo({ todo }: TodoInput) {
+  return <div>
+    <h1>{todo.title}</h1>
+    <h2>{todo.description}</h2>
+    
+  </div>
+}
+
+
+
+// Todo.tsx
+interface TodoType {
+  title: string;
+  description: string;
+  done: boolean;
+}
+
+interface TodoInput {
+  todo: TodoType;
+}
+
+function Todo ( todo : TodoInput) {
+  return <div>
+    <h1>{todo.title}</h1>
+    <h2>{todo.description}</h2>
+    
+  </div>
+}
