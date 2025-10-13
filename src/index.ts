@@ -59,7 +59,7 @@ const res = greetUser(user)
 
 console.log(res)*/
 
-
+/*
 
 // Todo.tsx
 
@@ -101,3 +101,41 @@ function Todo ( todo : TodoInput) {
     
   </div>
 }
+
+*/
+
+
+interface Users{
+    name:string,
+    gender:string,
+    age:number
+}
+
+
+function filteredUsers(users:Users[]){
+
+    return users.filter(x=>x.age>18)
+
+}
+
+
+let users = [
+  { name: "Aryan", gender: "male", age: 20 },
+
+  {
+    name: "Rushi",
+    gender: "male",
+    age: 16,
+  },
+
+  {
+    name: "Radhika",
+    gender: "female",
+    age: 21,
+  }
+];
+
+
+let res = filteredUsers(users)
+
+console.log(res)
