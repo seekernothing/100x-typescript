@@ -104,7 +104,7 @@ function Todo ( todo : TodoInput) {
 
 */
 
-
+// new way of writing interfaces
 interface Users{
     name:string,
     gender:string,
